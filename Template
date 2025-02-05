@@ -1,0 +1,91 @@
+Wood = 5 
+Brick = 5
+Nail = 5
+TotalInv = Wood + Brick + Nail
+Inventory = []
+if Wood > 0:
+    Inventory.append("Wood")
+if Brick > 0:
+    Inventory.append("Brick")
+if Nail > 0:
+    Inventory.append("Nail")
+if 'Wood' in Inventory:
+    print("You have", Wood, "wood")
+if 'Brick' in Inventory and Brick > 1:
+    print("You have", Brick, "Brick")
+if 'Brick' in Inventory and Brick == 1:
+    print("You have", Brick, "Brick")
+if "Nail" in Inventory and Nail > 1 :
+    print("You have", Nail, "Nails")
+if "Nail" in Inventory and Nail == 1:
+    print("You have", Nail, "Nail")
+if (TotalInv == 15):
+    print("Your Inventory is full.")
+TooMuch = input("Would you like to remove some stuff from your inventory?  y/n")
+if (TooMuch == 'y'):
+    print("")
+    print("Inventory:")
+    print("")
+    if 'Wood' in Inventory:
+        print("Wood:", Wood)
+    if 'Brick' in Inventory:
+        print("Brick:", Brick)
+    if 'Nail' in Inventory:
+        print("Nail:", Nail)
+    print("")
+    print("What would you like to remove?")
+    print("If nothing, Type 'Nothing'")
+    Remove = input("")
+    if (Remove == 'Wood'):
+        print("How much would you like to remove")
+        Quantity = input("")
+        if (Quantity == "1"):
+            Quantity = 1
+        if (Quantity == "2"):
+            Quantity = 2
+        if (Quantity == "3"):
+            Quantity = 3
+        if (Quantity == "4"):
+            Quantity = 4
+        if (Quantity == "5"):
+            Quantity = 5
+        Wood = Wood - Quantity
+        print("")
+    if (Remove == 'Brick'):
+        print("How much would you like to remove")
+        Quantity = input("")
+        if (Quantity == "1"):
+            Quantity = 1
+        if (Quantity == "2"):
+            Quantity = 2
+        if (Quantity == "3"):
+            Quantity = 3
+        if (Quantity == "4"):
+            Quantity = 4
+        if (Quantity == "5"):
+            Quantity = 5
+        Brick = Brick - Quantity
+        print("")
+    if (Remove == 'Nail'):
+        print("How much would you like to remove")
+        Quantity = input("")
+        if (Quantity == "1"):
+            Quantity = 1
+        if (Quantity == "2"):
+            Quantity = 2
+        if (Quantity == "3"):
+            Quantity = 3
+        if (Quantity == "4"):
+            Quantity = 4
+        if (Quantity == "5"):
+            Quantity = 5
+        Nail = Nail - Quantity
+        print("")
+    if (Remove == "Nothing"):
+        print("")
+    if 'Wood' in Inventory:
+        print("Wood:", Wood)
+    if 'Brick' in Inventory:
+        print("Brick:", Brick)
+    if 'Nail' in Inventory:
+        print("Nail:", Nail)
